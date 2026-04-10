@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
   try {
     const notion = new Client({ auth: token })
-    const dbId = process.env.CONTENT_DB_ID || 'f8c9b42b72a14708acad52d04f984817'
+    const dbId = process.env.CONTENT_DB_ID || 'ec524bbc0481457aabe18c4cb910b06a'
 
     if (req.method === 'GET') {
       const response = await notion.databases.query({
