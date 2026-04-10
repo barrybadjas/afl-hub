@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 
   try {
     const notion = new Client({ auth: token })
-    const dbId = process.env.AGENDA_DB_ID || '028c9e700c294b7dbe2200653660a031'
+    const dbId = process.env.AGENDA_DB_ID || '2b8c52d64a18413fa760a8e8af24536b'
 
     const response = await notion.databases.query({
       database_id: dbId,
